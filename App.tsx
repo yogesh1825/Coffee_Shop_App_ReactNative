@@ -6,6 +6,7 @@ import PaymentScreen from './src/screens/PaymentScreen';
 import {NavigationContainer} from '@react-navigation/native';
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
 import TabNavigator from './src/navigators/TabNavigator';
+import { COLORS } from './src/theme/theme';
 
 const Stack = createNativeStackNavigator();
 
@@ -40,7 +41,7 @@ const App = () => {
 const styles = StyleSheet.create({
   safeArea: {
     flex: 1,
-    backgroundColor: 'white', // Or your preferred background
+    backgroundColor: COLORS.primaryBlackHex, // Or your preferred background
   },
 });
 
